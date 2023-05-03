@@ -4,7 +4,7 @@ import webbrowser
 from PIL import Image
 from io import BytesIO
 
-openai.api_key = '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'
+openai.api_key = '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'
 
 query = input("질문을 입력하세요: ")
 
@@ -15,6 +15,16 @@ response = openai.ChatCompletion.create(
         {"role": "user", "content": query},
         {"role": "user", "content": "단답"},
         {"role": "user", "content": "입니다 빼고"}
+    ]
+)
+
+answer = response['choices'][0]['message']['content']
+
+response = openai.ChatCompletion.create(
+  model="gpt-3.5-turbo",
+  messages=[
+        {"role": "user", "content": answer},
+        {"role": "user", "content": "영어로 번역해줘"}
     ]
 )
 
