@@ -19,6 +19,7 @@ response = openai.ChatCompletion.create(
 )
 
 answer = response['choices'][0]['message']['content']
+print(answer)
 
 response = openai.ChatCompletion.create(
   model="gpt-3.5-turbo",
