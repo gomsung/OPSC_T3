@@ -28,3 +28,8 @@ ChatGPT
     출력 : 그림
 
 
+# 추가 기능
+
+ *목적 : 맞춤 운동 제시
+ *api_key를 input으로 받아서 사용
+ *구현 = streamlit
