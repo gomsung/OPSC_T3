@@ -35,3 +35,6 @@ ChatGPT
  *api_key를 input으로 받아서 사용
  
  *구현 = streamlit
+
+ *csvkit 기능 추가
+    csvkit fork  https://github.com/gomsung/OS_csvkit.git
